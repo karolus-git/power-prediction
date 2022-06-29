@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: power_prediction
+    ports:
+      - 8050:8050
+    volumes:
+      - ./datasets:/dashboard/datasets
+      - ./logs:/dashboard/logs
+
+volumes:
+  data:
+    driver: local
