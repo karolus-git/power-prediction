@@ -8,6 +8,8 @@ A datascience project that shows the power production in France and predicts the
 * A dashboard : to visualize the power production and prediction
 * Prediction models based on `fbprophet` : to predict the power consumption for the next day, week, month or year!
 
+![Screenshot of the dashboard](src/assets/screenshot.png)
+
 ## Installation
 
 Two installation methods are povided, one with `Python` and `pyenv`, the other one with `Docker`.
