@@ -1,4 +1,4 @@
-FROM python:3.8.13-slim
+FROM python:3.8.10-slim
 
 # Creation of the working directory called dashboard
 WORKDIR dashboard
