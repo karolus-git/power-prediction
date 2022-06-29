@@ -71,10 +71,6 @@ modal_window = dbc.Modal(
                         ),
                         html.Hr(),
 
-                        html.H6("What about the weather?"),
-                        html.P("In order th get a more accurate model, some meteorological data is required. The weather conditions are provided by the meteostat library and are downloaded for several stations located in a circle of 543km around the center of France."),
-                        html.Hr(),
-
                         html.H6("How do you predict things?"),
                         html.P("The fbprophet library provides a time-series based prediction. The three models are trained on the whole consolidated dataset (except the last 52 weeks) to predict the power consumption."),
                         html.Ul(
