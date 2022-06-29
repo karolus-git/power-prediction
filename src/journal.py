@@ -56,7 +56,9 @@ def init_journal(avoid_matplotlib=True, ignore_future=True):
 
 	# The stream handler
 	stream_handler = colorlog.StreamHandler()
-	file_handler = RotatingFileHandler(Path(LOGS_FOLDER, "journal.log"), maxBytes=1000*512, backupCount=10)
+	path_to_journal = Path(LOGS_FOLDER, "journal.log") 
+	path_to_journal.parent.mkdir(exist_ok=True)
+	file_handler = RotatingFileHandler(path_to_journal, maxBytes=1000*512, backupCount=10)
 
 	# The file handler
 	stream_handler.setFormatter(stream_formatter)
