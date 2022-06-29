@@ -1,0 +1,4 @@
+*.log
+*.pkl
+*.csv
+*.db
