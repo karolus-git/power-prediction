@@ -2,3 +2,6 @@
 *.pkl
 *.csv
 *.db
+*.tmp
+*.pyc
+__pycache__/
